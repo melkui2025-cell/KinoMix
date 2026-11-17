@@ -18,7 +18,7 @@ jobs:
       - name: Build APK
         run: |
           unzip KinoMixAndroid_source_v2.zip -d project
-          cd project
+          cd project/KinoMixAndroid
           gradle assembleDebug
       - uses: actions/upload-artifact@v4
         with:
